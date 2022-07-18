@@ -5,7 +5,7 @@
 
 This repository contains code for a basic python api using the [Fast Api framework](https://fastapi.tiangolo.com/) and Uvicorn server.
 
-The goal is to use it for [my blog demo](https://blog.abdelfare.me).
+This api will be used for [blog demo purposes](https://blog.abdelfare.me).
 
 ## Installation method 1 (Run application locally)
 
