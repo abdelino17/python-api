@@ -1,0 +1,15 @@
+version: 1.0 # specify the version of the specification
+runtime: python3 # runtime to use
+build:
+  commands:
+    build:
+      - pipenv install --deploy # install production dependencies
+
+  env: # environment variables
+    - name: PORT
+      value: "8080"
+
+run:
+  command: python app.py # command to run fastapi
+  network:
+    port: 8080 # port AppRunner will expose
