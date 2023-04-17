@@ -15,6 +15,11 @@ def index(request: Request):
     REQUESTS.labels(endpoint='/ping').inc()
     return "pong"
 
+@api.get('/hello')
+def hello(request: Request):
+    REQUESTS.labels(endpoint='/hello').inc()
+    return "Hello World!"
+
 @api.get('/metrics')
 def metrics():
     return fastapi.responses.PlainTextResponse(
