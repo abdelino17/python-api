@@ -3,14 +3,13 @@ runtime: python3 # runtime to use
 build:
   commands:
     build:
-      - pip install pipenv
-      - pipenv install --deploy # install production dependencies
+      - pip install -r requirements.txt # install production dependencies
 
   env: # environment variables
     - name: PORT
       value: "8080"
 
 run:
-  command: pipenv run python app.py # command to run fastapi
+  command: python app.py # command to run fastapi
   network:
     port: 8080 # port AppRunner will expose
