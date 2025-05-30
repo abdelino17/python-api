@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: python-api
+  description: Python API used for testing purposes
+  annotations:
+    github.com/project-slug: abdelino17/python-api
+
+spec:
+  type: service
+  owner: development  # group
+  lifecycle: production
