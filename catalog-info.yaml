@@ -5,7 +5,7 @@ metadata:
   description: Python API used for testing purposes
   annotations:
     github.com/project-slug: abdelino17/python-api
-
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   owner: development  # group
